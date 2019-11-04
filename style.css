@@ -79,3 +79,26 @@
 
     border-radius: 50%;
 }
+
+.switcher__button-image {
+    width: 22px;
+    height: 24px;
+    stroke: #655466;
+    fill: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.switcher__input:checked + .switcher__border .switcher__button-image {
+    stroke: #CC00FF;
+}
+
+.switcher__input:focus + .switcher__border {
+    box-shadow: 0 0 3px 0 green;
+}
+
+
